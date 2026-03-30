@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class PlatformSpawner : MonoBehaviour
 {
     [Header("References")]
-    public GameObject platformPrefab;
+    public GameObject[] platformPrefabs;
     public Transform player;
 
     [Header("Spawn Settings")]
@@ -50,17 +50,20 @@ public class PlatformSpawner : MonoBehaviour
 
     void SpawnPlatform()
     {
-        if (platformPrefab == null)
+        if (platformPrefabs == null || platformPrefabs.Length == 0)
         {
-            Debug.LogWarning("Platform prefab is not assigned in PlatformSpawner.");
+            Debug.LogWarning("No platform prefabs assigned in PlatformSpawner.");
             return;
         }
+
+        int randomIndex = Random.Range(0, platformPrefabs.Length);
+        GameObject chosenPrefab = platformPrefabs[randomIndex];
 
         float yRotation = Random.Range(0f, 360f);
         Vector3 spawnPosition = new Vector3(0f, lastY, 0f);
 
         GameObject newPlatform = Instantiate(
-            platformPrefab,
+            chosenPrefab,
             spawnPosition,
             Quaternion.Euler(0f, yRotation, 0f)
         );

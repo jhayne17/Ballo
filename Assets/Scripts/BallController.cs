@@ -5,7 +5,13 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     private bool isDead = false;
-    // Start is called before the first frame update
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     void FixedUpdate()
     {
         Vector3 vel = rb.velocity;
@@ -13,14 +19,15 @@ public class BallController : MonoBehaviour
         vel.z = 0f;
         rb.velocity = vel;
     }
-   void OnCollision(Collision collision)
+
+    void OnCollisionEnter(Collision collision)
     {
-       if(collision.GameObject.compareTag("DangerPlatform"))
+        if (collision.gameObject.CompareTag("DangerPlatform"))
         {
             isDead = true;
-            GameManager.Instance.GameOver();
+            // GameManager.Instance.GameOver(); // comment this out for now
         }
-        if (collision.GameObject.compareTag("SafePlatform"))
+        if (collision.gameObject.CompareTag("SafePlatform"))
         {
             isDead = false;
         }

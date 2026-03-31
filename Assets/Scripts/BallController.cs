@@ -2,34 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallController : MonoBehaviour
+public class BallControl : MonoBehaviour
 {
-    private bool isDead = false;
-    private Rigidbody rb;
-
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    void FixedUpdate()
-    {
-        Vector3 vel = rb.velocity;
-        vel.x = 0f;
-        vel.z = 0f;
-        rb.velocity = vel;
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("DangerPlatform"))
+        if (collision.gameObject.CompareTag("Kill"))
         {
-            isDead = true;
-            // GameManager.Instance.GameOver(); // comment this out for now
+            Destroy(gameObject);
         }
-        if (collision.gameObject.CompareTag("SafePlatform"))
+
+        if (collision.gameObject.CompareTag("Safe"))
         {
-            isDead = false;
+            Debug.Log("Safe platform hit");
         }
     }
 }

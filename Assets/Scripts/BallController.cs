@@ -9,6 +9,7 @@ public class BallControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Kill"))
         {
             Destroy(gameObject);
+            Debug.Log("Game Over");
         }
 
         if (collision.gameObject.CompareTag("Safe"))

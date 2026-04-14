@@ -8,6 +8,7 @@ public class PlatformSpawner : MonoBehaviour
     [Header("References")]
     public GameObject platformPrefab;
     public Material redMaterial;
+    
     public Material greenMaterial;
     public Transform player;
     public Transform tower;

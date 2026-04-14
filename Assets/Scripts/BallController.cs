@@ -10,11 +10,14 @@ public class BallControl : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("Game Over");
+            HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.Instance.score);
+            GameManager.Instance.GameOver();
+
         }
 
         if (collision.gameObject.CompareTag("Safe"))
-        {
-            Debug.Log("Safe platform hit");
-        }
+    {
+        ScoreCounter.Instance.score++;
+    }
     }
 }

@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformSpawner : MonoBehaviour
-
 {
     [Header("References")]
     public GameObject platformPrefab;
     public Material redMaterial;
-    
     public Material greenMaterial;
     public Transform player;
     public Transform tower;
@@ -21,6 +19,7 @@ public class PlatformSpawner : MonoBehaviour
 
     private List<GameObject> spawnedPlatforms = new List<GameObject>();
     private float lastY = 0f;
+    private bool isFirstPlatform = true;
 
     void Start()
     {
@@ -67,14 +66,22 @@ public class PlatformSpawner : MonoBehaviour
         Vector3 spawnPosition = new Vector3(0f, lastY, 0f);
         float yRotation = Random.Range(0f, 360f);
 
-    GameObject newPlatform = Instantiate(
-        platformPrefab,
-        spawnPosition,
-        Quaternion.Euler(0f, yRotation, 0f),
-        tower
-);
+        GameObject newPlatform = Instantiate(
+            platformPrefab,
+            spawnPosition,
+            Quaternion.Euler(0f, yRotation, 0f),
+            tower
+        );
 
-        AssignSegmentColors(newPlatform);
+        if (isFirstPlatform)
+        {
+            SetAllGreen(newPlatform);
+            isFirstPlatform = false;
+        }
+        else
+        {
+            AssignSegmentColors(newPlatform);
+        }
 
         spawnedPlatforms.Add(newPlatform);
         lastY -= verticalSpacing;
@@ -106,6 +113,17 @@ public class PlatformSpawner : MonoBehaviour
 
             renderers[i].material = isSafe ? greenMaterial : redMaterial;
             renderers[i].gameObject.tag = isSafe ? "Safe" : "Kill";
+        }
+    }
+
+    void SetAllGreen(GameObject platform)
+    {
+        MeshRenderer[] renderers = platform.GetComponentsInChildren<MeshRenderer>();
+
+        foreach (MeshRenderer r in renderers)
+        {
+            r.material = greenMaterial;
+            r.gameObject.tag = "Safe";
         }
     }
 }

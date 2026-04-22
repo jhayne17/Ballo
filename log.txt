@@ -1,0 +1,160 @@
+commit 460d84b488ec0ad28fa40b4e3cc72968b8e384b5
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Wed Apr 22 00:46:32 2026 -0400
+
+    Finishedgit add .git add .
+
+commit 14f22d9c7ce88637bb0299d3d58470c5d25789a2
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Tue Apr 21 23:34:10 2026 -0400
+
+    made game more playable
+
+commit 279d70779b5f4226376d95906aee084dd4f19322
+Merge: ce2463b a27584b
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Tue Apr 21 22:39:55 2026 -0400
+
+    kept our version of Main scene
+
+commit ce2463becd021914db51e9141ac5973a2e5df07d
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Tue Apr 21 22:28:16 2026 -0400
+
+    added proper tower camera and tower stuff
+
+commit a27584b9423c60e57dc2465698026a21390a9410
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Tue Apr 21 19:11:39 2026 -0400
+
+    main menu added.
+
+commit 22f7a0e138a4efcac4e5209546be8491abf8288c
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Sun Apr 19 13:07:28 2026 -0400
+
+    space background
+
+commit 0492c3956b7560a01b2c3ac2bfd5ce3b8d0bf9c4
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Sun Apr 19 12:52:27 2026 -0400
+
+    music and sound effects
+
+commit 7b04b4c37bd4722f94cdc472e3c808bbaff7d4c5
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Sun Apr 19 12:29:55 2026 -0400
+
+    first platform green
+
+commit 00480be70d4a407118f8e059cbe0c3039f708b2f
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Mon Apr 13 23:59:51 2026 -0400
+
+    fixed minor bug
+
+commit e3e0f1981c63a3a4f0f3a63deaffa68c55fea8f0
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Mon Apr 13 23:57:06 2026 -0400
+
+    finished all UI related stuff
+
+commit b52c46746d25b5d7780cc4e7d545ddbec72714b8
+Merge: 748ab10 945ce51
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Mon Apr 13 11:20:27 2026 -0400
+
+    Merge branch 'jh-new' of https://github.com/jhayne17/Ballo into milesPadotBranch
+
+commit 748ab10bfe2ac1b45d0f8f09a9cf9f9081a1b048
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Mon Apr 13 11:19:53 2026 -0400
+
+    pulling from jh-new to make the game more testable
+
+commit 945ce51a7d9ebd66e3c759f9cfbbca9800f45a63
+Author: Adonay Zeru <231997187+Donigit1@users.noreply.github.com>
+Date:   Mon Apr 13 10:34:38 2026 -0400
+
+    Update Materials.meta.unity
+
+commit 366ba230e8a30405f89e96fd21dd28e54bdf740f
+Author: Adonay Zeru <231997187+Donigit1@users.noreply.github.com>
+Date:   Mon Apr 13 10:06:51 2026 -0400
+
+    camera fix
+
+commit c827639d71054d910515c65a9180ad824202fdfc
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Mon Apr 13 09:16:40 2026 -0400
+
+    finished my stuff
+
+commit 9025be36f15315f76d3f966de685ccdf3b4df39d
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Mon Apr 6 10:49:08 2026 -0400
+
+    platform prefab only in prefab and not in hierachy
+
+commit 449e2ee87f27d88d756ce473dd90b6af0c0037ce
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Fri Apr 3 10:44:18 2026 -0400
+
+    working platform spawner
+
+commit 66bb376f46d9388e39d311c184635751e8be997e
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Fri Apr 3 10:19:07 2026 -0400
+
+    spawner added and tested
+
+commit e7edff0904133577ed1d7e3780a2e23dbc4d734d
+Author: Adonay Zeru <231997187+Donigit1@users.noreply.github.com>
+Date:   Wed Apr 1 09:34:19 2026 -0400
+
+    Towers with arcs
+
+commit 846b21000e99943ff39f07f83cbff8f3dea926e3
+Author: Adonay Zeru <231997187+Donigit1@users.noreply.github.com>
+Date:   Tue Mar 31 18:19:24 2026 -0400
+
+    Add red and green platform materials and first platform pieces
+
+commit 9fd55f1b18a01e918373a67addfa63b401dde669
+Merge: d02087a 817d322
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Mon Mar 30 10:41:42 2026 -0400
+
+    Merge pull request #1 from jhayne17/milesPadotBranch
+    
+    Miles padot branch
+
+commit 817d32235876ad9259f2221fe2b5703a9d41ff33
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Mon Mar 30 10:38:08 2026 -0400
+
+    added ball stuff
+
+commit 1bbdb75f34be71828c2922bb2ce68035e7b9b371
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Wed Mar 25 12:07:22 2026 -0400
+
+    Added neon trail to ball
+
+commit efd5933bcfb7e50f681450637c68116f41858044
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Wed Mar 25 11:41:15 2026 -0400
+
+    Added tower prefab and fixed bug in BallBounce, as well as MoveTower.cs
+
+commit d02087abfbe7e3186281d8eed5b669f43ab964f0
+Author: Miles Padot <155395178+mpadot@users.noreply.github.com>
+Date:   Wed Mar 25 11:19:10 2026 -0400
+
+    added scenes, prefabs, materials, and scripts folders
+
+commit b20dc63c12719faa2a596c9219ab1d4dfa585c7a
+Author: Justin Haynes <232441884+jhayne17@users.noreply.github.com>
+Date:   Thu Mar 19 22:22:44 2026 -0400
+
+    Initial commit

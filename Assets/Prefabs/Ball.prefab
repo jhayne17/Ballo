@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6464545340444060450}
   - component: {fileID: 8055176832248088189}
   - component: {fileID: 4750360335037349213}
+  - component: {fileID: -1119096487701496722}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -151,6 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0832694e34ec28e4f9f32caea9ddac57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blueMaterial: {fileID: 0}
+  redMaterial: {fileID: 0}
+  greenMaterial: {fileID: 0}
+  purpleMaterial: {fileID: 0}
 --- !u!96 &-9026204173371486548
 TrailRenderer:
   serializedVersion: 3
@@ -276,7 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e2ed4dc6abb9c45a2ae45e42927c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rig: {fileID: 0}
+  initialGravity: 9.81
+  gravityIncrement: 2
+  scoreThreshold: 15
 --- !u!114 &6464545340444060450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,3 +407,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 8055176832248088189}
   bounceClip: {fileID: 8300000, guid: c2fef9cb6313ad743accbefe5d208d81, type: 3}
+--- !u!114 &-1119096487701496722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8503730717586451775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c492929443590b346954007f5890c763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteMaterial: {fileID: 2100000, guid: 90f5fcc22a421f3418336ce0277349f0, type: 2}
+  blueMaterial: {fileID: 2100000, guid: a2975fa61dd60e14caea39ccb2b4a6cf, type: 2}
+  purpleMaterial: {fileID: 2100000, guid: dcca5a300c8ea574a9d3e7a35c2c843d, type: 2}

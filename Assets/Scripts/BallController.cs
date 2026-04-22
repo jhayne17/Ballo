@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BallControl : MonoBehaviour
 {
+
+    public Material blueMaterial;
+    public Material redMaterial;
+    public Material greenMaterial;
+    public Material purpleMaterial;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Kill"))
@@ -20,4 +25,9 @@ public class BallControl : MonoBehaviour
         ScoreCounter.Instance.score++;
     }
     }
+
+
+
+    
+
 }

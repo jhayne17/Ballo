@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 135200535}
   - component: {fileID: 135200534}
   - component: {fileID: 135200537}
+  - component: {fileID: 135200538}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -334,6 +335,19 @@ MonoBehaviour:
   ball: {fileID: 1067790481}
   yOffset: 8
   followSpeed: 6
+--- !u!114 &135200538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135200533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b015f95e191d747a38f33c1e232521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreThreshold: 10
 --- !u!1 &154247059
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +441,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1403131587761832475, guid: f9badb38da0e5be4cb84b2750c242a0d, type: 3}
+      propertyPath: mouseSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 334623009535310684, guid: f9badb38da0e5be4cb84b2750c242a0d, type: 3}
       propertyPath: m_Name
       value: Tower
@@ -2088,6 +2106,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4516104971017084351, guid: d40012e5803f8114e996f1ba3cd4ae32, type: 3}
+      propertyPath: scoreThreshold
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4516104971017084351, guid: d40012e5803f8114e996f1ba3cd4ae32, type: 3}
+      propertyPath: gravityIncrement
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 59499642878956371, guid: d40012e5803f8114e996f1ba3cd4ae32, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1
@@ -2128,6 +2154,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3886433460289762753, guid: d40012e5803f8114e996f1ba3cd4ae32, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c090d373b73cede4195badd7041b79f5, type: 2}
     - target: {fileID: 6633008707932792187, guid: d40012e5803f8114e996f1ba3cd4ae32, type: 3}
       propertyPath: m_Drag
       value: 2

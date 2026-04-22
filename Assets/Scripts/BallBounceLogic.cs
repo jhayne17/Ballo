@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BallBounceLogic : MonoBehaviour
 {
-    public float bounceForce = 8f;
+    public float bounceForce = .5f;
     private Rigidbody rb;
 
     private void Awake()

@@ -10,6 +10,7 @@ public class PlatformSpawner : MonoBehaviour
     public Material greenMaterial;
     public Transform player;
     public Transform tower;
+    public Transform platformParent;
 
     [Header("Spawn Settings")]
     public int initialPlatforms = 12;
@@ -65,12 +66,13 @@ public class PlatformSpawner : MonoBehaviour
 
         Vector3 spawnPosition = new Vector3(0f, lastY, 0f);
         float yRotation = Random.Range(0f, 360f);
+        Transform parent = platformParent != null ? platformParent : tower;
 
         GameObject newPlatform = Instantiate(
             platformPrefab,
             spawnPosition,
             Quaternion.Euler(0f, yRotation, 0f),
-            tower
+            parent
         );
 
         if (isFirstPlatform)

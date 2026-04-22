@@ -374,6 +374,51 @@ Transform:
   - {fileID: 1635880552}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &180564951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 180564952}
+  - component: {fileID: 180564953}
+  m_Layer: 0
+  m_Name: PlatformParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &180564952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180564951}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &180564953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180564951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491e7672dae75a6418cddb7f4518266b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower: {fileID: 513771368}
 --- !u!1001 &215437454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -392,7 +437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242911751560211591, guid: f9badb38da0e5be4cb84b2750c242a0d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 30
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8242911751560211591, guid: f9badb38da0e5be4cb84b2750c242a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1623,6 +1668,7 @@ MonoBehaviour:
   greenMaterial: {fileID: 2100000, guid: bd77ab122bfeb44ada9a90c871bda8be, type: 2}
   player: {fileID: 1067790481}
   tower: {fileID: 513771368}
+  platformParent: {fileID: 180564952}
   initialPlatforms: 1
   verticalSpacing: 8
   spawnDistance: 20
@@ -2532,3 +2578,4 @@ SceneRoots:
   - {fileID: 63095420}
   - {fileID: 1100945896}
   - {fileID: 731402663}
+  - {fileID: 180564952}
